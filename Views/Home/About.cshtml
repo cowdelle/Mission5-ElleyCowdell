@@ -1,0 +1,113 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<body>
+    <header class="nav-menu">
+        <label for="nav-toggle" class="nav-toggle-label"></label>
+    </header>
+
+    <div class="hero small">
+        <div class="text-wrapper">
+            <h1>About</h1>
+        </div>
+        <div class="image-background">
+            <img srcset="~/wwwroot/images/hero-nt-300px.jpg 300w,
+            ~/wwwroot/images/hero-nt-600px.jpg 600w,
+            ~/wwwroot/images/hero-nt-900px.jpg 900w" sizes="50vw" src="~/wwwroot/images/hero-nt-600px.jpg"
+                 alt="hand-painted image of Moses parting the Red Sea">
+        </div>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul id="menu-topo">
+        <li class="nav-item"><a href="../">Home</a></li>
+        <li class="nav-item"><a>About</a></li>
+        <li class="nav-item"><a href="../products/">Products</a></li>
+        <li class="nav-item"><a href="../contact/">Contact</a></li>
+    </ul>
+
+    <main>
+        <article class="panel">
+            <div class="text-wrapper left">
+                <h2>Hi! I'm Elley!</h2>
+                <p>
+                    My name is Elley, and I am a unique daughter of God. I grew up in a small town, called Price, UT. I was
+                    involved in everything under the sun: ballet school, varsity soccer and swim, local government, musicals,
+                    choir, business clubs, science fair, and so much more.
+                </p>
+                <p>
+                    After graduating high school, I went to college for a year and then decided to take a break to serve a
+                    mission for my church. So I moved to Texas for about a year and a half to talk about Jesus!
+                </p>
+            </div>
+            <div class="image-wrapper">
+                <img src="~/wwwroot/images/Elley1.JPG" alt="Happy picture of Elley">
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="text-wrapper">
+                <h2>First Came Love...</h2>
+                <p>
+                    As a missionary, I constantly heard about the need to
+                    study the scriptures. With everyone studying the same thing in almost the same way, how could I make
+                    scripture
+                    study unique for me and those I was teaching?
+                </p>
+                <p>
+                    There were two girls who I worked closely with who had also attended college before they came to Texas. They
+                    were art majors and liked to paint in their free time. So I asked them to teach me!
+                </p>
+                <p>I fell in love with painting and started to paint scripture covers for anyone and everyone who asked!</p>
+            </div>
+            <div class="image-wrapper left">
+                <img src="~/wwwroot/images/Elley2.jpg" alt="Another happy picture of Elley">
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="text-wrapper left">
+                <h2>Then Came the Art.</h2>
+                <p>
+                    There were a lot of people who really liked my artwork! They told me I should start to sell it, but I was
+                    hesitant because I didn't want to lose the love of art that I had gained. I was afraid it would become
+                    something I <em>had</em> to do, rather than something I <em>love</em> to do.
+                </p>
+                <p>
+                    But as I kept painting, I realized that having personalized scriptures helps encourage one's love for
+                    studying the scriptures. If God gives you a gift, you've got to share it!
+                </p>
+                <p>So here is <em>Elley Cowdell Christian Art</em>. A place where you get to design art that speaks to you.</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="~/wwwroot/images/Elley3.JPG" alt="Happy picture of Elley">
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="text-wrapper">
+                <h2>Check on Prices</h2>
+                <form id="calc">
+                    <label for="hours">Number of Hours:</label>
+                    <input type="number" id="hours" min="1" />
+                    <label for="rate">Hourly Rate:</label>
+                    <input type="text" id="rate" value="$45" readonly>
+                    <br>
+                    <button id="calculateBtn">Calculate Total</button>
+                    <br>
+                    <label for="total">Total:</label>
+                    <input type="text" id="total" readonly>
+                    <br>
+                    <a href="@Url.Action("Index", "Home")">Back to Home</a>
+                </form>
+            </div>
+        </article>
+    </main>
+
+</body>

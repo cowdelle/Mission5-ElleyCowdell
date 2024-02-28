@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<body>
+    <div class="hero">
+
+        <div class="video-background">
+            <div class="video-foreground">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Mi2NWbXjkoQ?controls=0&amp;start=8&amp;clip=UgkxFMn8v5RLevFbMf_BpyMuMvqM_ALn5-G3&amp;clipt=ENeqARi3_wQ&autoplay=1&mute=1&loop=1"
+                        frameborder="0" allow="autoplay; loop;"></iframe>
+            </div>
+        </div>
+
+        <div class="text-wrapper">
+            <h1>Elley Cowdell</h1>
+            <p>CHRISTIAN ART</p>
+        </div>
+    </div>
+
+    <header class="nav-menu">
+        <label for="nav-toggle" class="nav-toggle-label"></label>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul id="menu-topo">
+        <li class="nav-item"><a>Home</a></li>
+        <li class="nav-item"><a href="about/about.html">About</a></li>
+        <li class="nav-item"><a href="products/">Products</a></li>
+        <li class="nav-item"><a href="contact/">Contact</a></li>
+    </ul>
+
+    <main>
+        <article class="panel">
+            <div class="text-wrapper left">
+                <h2>Custom Scripture Covers for Every Personality</h2>
+                <p>
+                    In God's world, the individual counts. Therefore, Christian art should deal with the individual. -Francis
+                    Schaeffer
+                </p>
+                <a href="products/" class="button">Products</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="~/wwwroot/images/jesuswaterbom.jpg" alt="Book of Mormon painting of Jesus walking on the shore">
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="text-wrapper">
+                <h2>You are Unique</h2>
+                <p>
+                    My name is Elley, and I am a unique daughter of God. As a Christian, I constantly hear about the need to
+                    study the scriptures. With everyone studying the same thing in almost the same way, how could I make
+                    scripture
+                    study unique for me?
+                </p>
+                <a href="about/about.html" class="button">About me</a>
+            </div>
+            <div class="image-wrapper left">
+                <img src="~/wwwroot/images/jesusrocknt.jpg" alt="New Testament painting of Jesus looking at the night sky">
+            </div>
+        </article>
+    </main>
+
+
+    <section class="cards">
+        <a href="products/" class="card">
+            <img src="~/wwwroot/images/nauvoont.jpg" alt="Nauvoo-themed new testament">
+            <p>Nauvoo</p>
+        </a>
+        <a href="products/" class="card">
+            <img src="~/wwwroot/images/mosesbom.jpg" alt="Book of Mormon painting Moses">
+            <p>Moses</p>
+        </a>
+        <a href="products/" class="card">
+            <img src="~/wwwroot/images/sunsetbom.jpg" alt="Sunset Book of Mormon">
+            <p>Sunset</p>
+        </a>
+        <a href="products/" class="card">
+            <img src="~/wwwroot/images/temple2800.jpg" alt="San Diego temple on a New Testament">
+            <p>San Diego</p>
+        </a>
+    </section>
+
+ 
+
+</body>
+
+</html>
